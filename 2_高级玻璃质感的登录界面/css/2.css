@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.box {
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+}
+
+.box .content {
+  width: 85vw;
+  height: 90vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  object-fit: cover;
+  transition: 0.5S;
+}
+
+.box .content .login-wrapper {
+  width: 500px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  box-sizing: border-box;
+}
+
+.box .content .login-wrapper .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(155, 155, 255, 0.7);
+  backdrop-filter: blur(15.5px);
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.box .content .login-wrapper .login-content {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box .content .login-wrapper .login-content h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.box .content .login-wrapper .login-content .title-text {
+  color: #413f3f;
+  margin-bottom: 50px;
+}
+
+.box .content .login-wrapper .login-content .other-login {
+  width: 100%;
+  height: 50px;
+  background-color: #f8b6d9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: 1s;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #292929;
+  cursor: pointer;
+}
+
+.box .content .login-wrapper .login-content .other-login img {
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+}
+
+.box .content .login-wrapper .login-content .login-form {
+  margin-top: 40px;
+}
+
+.box .content .login-wrapper .login-content .login-form input {
+  width: 100%;
+  height: 45px;
+  margin: 10px 0;
+  border: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.box .content .login-wrapper .login-content .login-form input:focus {
+  outline: none;
+}
+
+.box .content .login-wrapper .login-content .login-form input::placeholder {
+  font-weight: 600;
+  color: block;
+}
+
+.box .content .login-wrapper .login-btn {
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #363bc5;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.box .content .login-wrapper .tips {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #9698c5;
+}
+
+.box .content .login-wrapper .tips span:nth-child(2) {
+  color: #363bc5;
+  font-weight: 600;
+}
