@@ -9,3 +9,7 @@
 参考视频： 【[HTML+CSS+JS]高级玻璃质感登录界面】 https://www.bilibili.com/video/BV1rP411K7fv/?share_source=copy_web
 图片来源： 有什么美的电脑壁纸? - 懒雯养花的回答 - 知乎 https://www.zhihu.com/question/361816826/answer/1005514285
 案例总结： 初次使用了scss来写CSS样式，且在JS中使用了一个反字符串的用法。
+
+#### 1.3 ： 这是一个主要依靠Js实现的字母自由浮动的特效
+参考视频： 【【JavaScript】前端超好玩的小案例-调皮的字母】 https://www.bilibili.com/video/BV1e44y1C7wD/?share_source=copy_web&vd_source=ba60c048e4ef44a77b68ff234c975e03
+案例总结： 这个案例还没有理解清楚，主要是Js部分的代码有点多，然后不知道复制的哪里错了，还不能实现自动浮动。
