@@ -1,7 +1,13 @@
 # Front-end-daily-small-cases
 每日一个前端的小案例，主要是CSS+JS
 
+<details>
+  <summary>**1.1 ： 带有手风琴效果的图片轮播**</summary>
+  参考视频：【HTML5+CSS3+JS小实例：带标题描述的圆角图片手风琴效果】 https://www.bilibili.com/video/BV1WS4y1K7JH/?share_source=copy_web&vd_source=ba60c048e4ef44a77b68ff234c975e03
+图片来源：https://www.zmtc.com/bizhi/1512.html
+</details>
 #### 1.1 ： 带有手风琴效果的图片轮播
+
 参考视频：【HTML5+CSS3+JS小实例：带标题描述的圆角图片手风琴效果】 https://www.bilibili.com/video/BV1WS4y1K7JH/?share_source=copy_web&vd_source=ba60c048e4ef44a77b68ff234c975e03
 图片来源：https://www.zmtc.com/bizhi/1512.html
 
