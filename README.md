@@ -20,4 +20,10 @@
 案例总结： 这个案例还没有理解清楚，主要是Js部分的代码有点多，然后不知道复制的哪里错了，还不能实现自动浮动。
 </details>
 
+<details>
+  <summary> 1.4 ： 滚轮视差效果  </summary>
+  参考视频： 【[Css+Js]这该死的高级感 滚轮视差响应】 https://www.bilibili.com/video/BV1Ag411u7RH/?share_source=copy_web&vd_source=ba60c048e4ef44a77b68ff234c975e03</br>
+  案例总结： 又是一个未完全做完的案例，这两天有点忙了，但是先把代码交上去吧，后面必须回来做完。
+</details>
+
 
