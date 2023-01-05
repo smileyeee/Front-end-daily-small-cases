@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="5.css">
+    <script>
+        function change(str) {  
+            document.getElementById('container').setAttribute('class', str);
+
+        }
+    </script>
+</head>
+<body>
+    <div class="btn-box">
+        <div onclick="change('light')">
+            <ion-icon name="sunny-outline"></ion-icon>日
+        </div>
+        <div onclick="change('dark')">
+            <ion-icon name="moon-outline"></ion-icon>月
+        </div>
+    </div>
+    <div class="dark" id="container">
+        <div class="bg"></div>
+        
+        <div class="moon-box">
+            <div class="moon"></div>
+        </div>
+        <div class="sun-box">
+            <div class="sun"></div>
+        </div>
+        <div class="sea"></div>
+    </div>
+</body>
+</html>
