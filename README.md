@@ -2,7 +2,7 @@
 每日一个前端的小案例，主要是CSS+JS
 
 <details>
-  <summary> **1.1 ： 带有手风琴效果的图片轮播** </summary>
+  <summary> 1.1 ： 带有手风琴效果的图片轮播 </summary>
   参考视频：【HTML5+CSS3+JS小实例：带标题描述的圆角图片手风琴效果】 https://www.bilibili.com/video/BV1WS4y1K7JH/?share_source=copy_web&vd_source=ba60c048e4ef44a77b68ff234c975e03</br>
 图片来源：https://www.zmtc.com/bizhi/1512.html</br>
 </details>
@@ -26,4 +26,9 @@
   案例总结： 又是一个未完全做完的案例，这两天有点忙了，但是先把代码交上去吧，后面必须回来做完。
 </details>
 
+<details>
+  <summary> 1.5 ： 日月切换效果  </summary>
+  参考视频： 【HTML5+CSS3+JS小实例：日月交替效果】 https://www.bilibili.com/video/BV1hT4y117Ed/?share_source=copy_web&vd_source=ba60c048e4ef44a77b68ff234c975e03</br>
+  案例总结： 一个简单的切换效果，js写的简单而精确，另外学到了如何只用CSS画一个月亮形状的图案。
+</details>
 
