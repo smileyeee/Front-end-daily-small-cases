@@ -36,6 +36,6 @@
 <details>
   <summary> 1.6 ： 三叶结加载动画  </summary>
   参考视频： 【CSS加载环形动画效果】 https://www.bilibili.com/video/BV1Rb4y187q9/?share_source=copy_web&vd_source=ba60c048e4ef44a77b68ff234c975e03</br>
-  案例总结： 只使用了CSS进行实现，亮点在于如何利用border画出一条曲线，同时还使用了一个简单的动画，在这个案例中我把相关的CSS属性都了解清楚了，其中还有一个小点即`top: inherit;`的效果还没有理解清除。
+  案例总结： 只使用了CSS进行实现，亮点在于如何利用border画出一条曲线，同时还使用了一个简单的动画，在这个案例中我把相关的CSS属性都了解清楚了，其中还有一个小点即<code>top: inherit;</code>的效果还没有理解清除。
 </details>
 
