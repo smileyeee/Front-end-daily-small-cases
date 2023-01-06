@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* 定义计算盒子尺寸的方式类型：border-box是指边框和内边距的值是包含在 width 内的 */
+    box-sizing: border-box; 
+}
+
+body{
+    /* 设置显示模式，flex模式下该元素的行为类似块级元素并且根据弹性盒模型布局它的内容。 */
+    display:flex;
+    /* 定义了浏览器之间，如何分配顺着弹性容器主轴 (或者网格行轴) 的元素之间及其周围的空间。
+    center指：伸缩元素向每行中点排列。每行第一个元素到行首的距离将与每行最后一个元素到行尾的距离相同。*/
+    justify-content: center;
+    /* 元素在侧轴居中。如果元素在侧轴上的高度高于其容器，那么在两个方向上溢出距离相同。 */
+    align-items: center;
+    /* 设置元素的最小高度。这样能够防止 height 属性的应用值小于 min-height 的值。 */
+    /* vh单位：视口的初始包含块的高度的 1%。 */
+    min-height: 100vh;
+    background: #111;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .ring{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: -30px;
+    border: 4px solid transparent;
+    border-radius: 50%;
+    border-top: 4px solid #24ecff;
+    /* animation属性用于设置动画相关的属性，
+    如： animation-name 属性指定应用的一系列动画，每个名称代表一个由@keyframes定义的动画序列。
+    animation-duration属性指定一个动画周期的时长
+    animation-timing-function 属性定义 CSS 动画在每一动画周期中执行的节奏。
+        linear 即线性节奏。
+    animation-iteration-count CSS 属性 定义动画在结束前运行的次数 可以是 1 次 无限循环。
+        infinite 无限循环播放动画。
+    */
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.container .ring::before{
+    content:'';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #24ecff;
+    top: 12px;
+    right: 15px;
+    border-radius: 50%;
+    /* 当设置了多个阴影时，阴影绘制由最后一个开始，故第一个设置的阴影将覆盖在后设置的阴影之上。 */
+    box-shadow: 0 0 0 5px #24ecff33, /*最后两位为透明度alpha值*/
+    0 0 0 10px #24ecff22,
+    0 0 0 20px #24ecff11,
+    0 0 20px #24ecff,
+    0 0 50px #24ecff;
+
+}
+
+.container .ring:nth-child(2){
+    animation: animate2 4s linear infinite;
+    border-top: 4px solid transparent;
+    border-left: 4px solid #93ff2d;
+    animation-delay: -1s;
+}
+
+.container .ring:nth-child(2):before{
+    content:'';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #93ff2d;
+    /* initial 这个关键字表示该值与其父元素 (可能不是它的包含块) 的计算值相同。 这里有点没有理解到。*/
+    top: initial;
+    bottom: 12px;
+    left: 15px;
+    border-radius: 50%;
+    /* 当设置了多个阴影时，阴影绘制由最后一个开始，故第一个设置的阴影将覆盖在后设置的阴影之上。 */
+    box-shadow: 0 0 0 5px #93ff2d33, /*最后两位为透明度alpha值*/
+    0 0 0 10px #93ff2d22,
+    0 0 0 20px #93ff2d11,
+    0 0 20px #93ff2d,
+    0 0 50px #93ff2d;
+
+}
+@keyframes animate2 {
+    0%{
+        transform: rotate(360deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.container .ring:nth-child(3){
+    animation: animate2 4s linear infinite;
+    animation-delay: -3s;
+    position: absolute;
+    top: -66.66px; 
+    border-top: 4px solid transparent;
+    border-left: 4px solid #e41cf8;
+}
+.container .ring:nth-child(3):before{
+    content:'';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #e41cf8;
+    /* initial 这个关键字表示该值与其父元素 (可能不是它的包含块) 的计算值相同。 这里有点没有理解到。*/
+    top: initial;
+    bottom: 12px;
+    left: 15px;
+    border-radius: 50%;
+    /* 当设置了多个阴影时，阴影绘制由最后一个开始，故第一个设置的阴影将覆盖在后设置的阴影之上。 */
+    box-shadow: 0 0 0 5px #e41cf833, /*最后两位为透明度alpha值*/
+    0 0 0 10px #e41cf822,
+    0 0 0 20px #e41cf811,
+    0 0 20px #e41cf8,
+    0 0 50px #e41cf8;
+
+}
+
+.container p{
+    position: absolute;
+    color: #fff;
+    /* 相对长度单位，这个单位表示元素的 font-size 的计算值。
+    如果用在font-size 属性本身，它则表示元素继承的 font-size 值。 */
+    font-size: 2em;
+    
+    font-family: consolas;
+    bottom: -200px;
+    letter-spacing: 0.4em;
+    font-weight: 1000;
+}
