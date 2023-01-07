@@ -39,3 +39,9 @@
   案例总结： 只使用了CSS进行实现，亮点在于如何利用border画出一条曲线，同时还使用了一个简单的动画，在这个案例中我把相关的CSS属性都了解清楚了，其中还有一个小点即<code>top: inherit;</code>的效果还没有理解清除。
 </details>
 
+<details>
+  <summary> 1.7 ： ∞无限循环动画  </summary>
+  参考视频： 【CSS加载环形动画效果】 https://www.bilibili.com/video/BV1Rb4y187q9/?share_source=copy_web&vd_source=ba60c048e4ef44a77b68ff234c975e03</br>
+  案例总结： 只使用了CSS进行实现，亮点在于如何进行光点的布局以及对几个变换方法的使用，如<code>filter：hue-rotate()</code>是色相旋转，可以实现颜色变化；<code>rotate()</code>实现旋转，画出∞的形状；<code>scale</code>实现缩放，实现光点闪烁的效果。另外，还使用了在HTML结构中使用<code><span style="--i:0"></span></code>这样的写法给CSS样式文件传递变量的用法，这是第一次见。
+</details>
+
