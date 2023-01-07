@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #042104;
+    /* 颜色变化的动画 ,8s就是循环两次动画变化一次颜色*/
+    animation: animateColor 8s linear infinite;
+}
+
+@keyframes animateColor {
+    /* filter 将模糊或颜色偏移等图形效果应用于元素。
+    滤镜通常用于调整图像、背景和边框的渲染。 */
+    0%{
+        /* hue-rotate() (en-US) 函数在输入图像上应用色相旋转。
+        angle 一值设定图像会被调整的色环角度值。
+        值为 0deg，则图像无变化。若值未设置值，默认为 0deg。
+        该值虽然没有最大值，超过 360deg 的值相当于又绕一圈。 */
+        filter: hue-rotate(0deg);
+    }
+
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+
+section .container{
+    display: flex;
+}
+
+section .container .circle{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 -10px;
+    
+}
+
+
+
+section .container .circle span{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    /* rotate() 函数定义了一种将元素围绕一个定点（由transform-origin属性指定）旋转而不变形的转换。
+    指定的角度定义了旋转的量度。 */
+    transform: rotate(calc(18deg * var(--i)));
+    /* 360 / 20 = 18deg */
+    
+}
+
+
+
+section .container .circle span::before{
+    /* CSS 中，::before 创建一个伪元素，其将成为匹配选中的元素的第一个子元素。
+    常通过 content 属性来为一个元素添加修饰性的内容。
+    此元素默认为行内元素。 */
+    content: '';
+    position: absolute;
+    right: 0;
+    /* calc() 此 CSS 函数允许在声明 CSS 属性值时执行一些计算。 */
+    top: calc(50% - 7.5px);
+    width: 15px;
+    height: 15px;
+    background-color: #00ff0a;
+    border-radius: 50%;
+    /* 对阴影的设置给出以下四个值时依次表示：
+    x 偏移量 | y 偏移量 | 阴影模糊半径 | 阴影颜色 */
+    /* 关于阴影模糊半径，值越大，模糊面积越大，阴影就越大越淡。 */
+    box-shadow: 0 0 10px #00ff0a,
+    0 0 20px #00ff0a,
+    0 0 40px #00ff0a,
+    0 0 60px #00ff0a,
+    0 0 80px #00ff0a,
+    0 0 100px #00ff0a;
+    /* 
+    scale() 用于修改元素的大小。
+    可以通过向量形式定义的缩放值来放大或缩小元素，同时可以在不同的方向设置不同的缩放值。
+    */
+    transform: scale(0.1);
+    /* 阴影缩放的动画，按照序号依次执行动画 */
+    /* 4s为一个单位延迟（0.1s）的20倍，20个点依次执行一遍动画 */
+    animation: animate 4s linear infinite; 
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate{
+    0%
+    {
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.1);
+    }
+}
+
+section .container .circle:nth-child(2){
+    transform: rotate(-180deg);
+}
+
+section .container .circle:nth-child(2) span::before{
+    /* 值为正是延迟，为负是提前，序号有20个，一半提前一半退后，整体就是依序执行的效果 */
+    animation-delay: calc(-0.1s * var(--i)); 
+}
