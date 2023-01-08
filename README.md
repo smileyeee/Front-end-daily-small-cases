@@ -46,3 +46,9 @@
   题外话：这两天模仿的主要是纯CSS实现的两个小案例，但是在写的时候有边查文档边看CSS各种属性的效果，所以收获反而感觉比开始的几次简单的抄写代码然后看到能够复现就没有去详细了解来的收获更大，所以接下来几天应该还是继续找一些纯CSS实现的案例来做，毕竟JS目前好像没办法在VScode中直接查找官方文档，等想办法解决了这个问题后再去尝试一些涉及JacaScript的案例吧。
 </details>
 
+<details>
+  <summary> 1.8 ： 打字动画效果  </summary>
+  参考视频： 【代码讲解】纯CSS实现打字动效】 https://www.bilibili.com/video/BV1cV4y1A7yy/?share_source=copy_web&vd_source=ba60c048e4ef44a77b68ff234c975e03</br>
+  案例总结： 只使用了CSS进行实现，亮点在于对打字效果的动画分解，使用了两个动画共同作用来实现目标效果。
+</details>
+
