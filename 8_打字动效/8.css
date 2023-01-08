@@ -1,0 +1,91 @@
+/* 常规初始化设置 */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* CSS全局变量的声明是在变量名称前加两个中横线--。 */
+    --cir:#365a77;
+    /* animation: animateColor 3s steps(9) infinite; */
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    color: #fff;
+    background-color: var(--cir);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* 加一个昨天学的色相移动的动画 ,多个动画叠加还不知道怎么处理，效果不对*/
+@keyframes animateColor {
+    /* filter 将模糊或颜色偏移等图形效果应用于元素。
+    滤镜通常用于调整图像、背景和边框的渲染。 */
+    0%{
+        /* hue-rotate() (en-US) 函数在输入图像上应用色相旋转。
+        angle 一值设定图像会被调整的色环角度值。
+        值为 0deg，则图像无变化。若值未设置值，默认为 0deg。
+        该值虽然没有最大值，超过 360deg 的值相当于又绕一圈。 */
+        filter: hue-rotate(0deg);
+    }
+    30%, 70%{
+        filter: hue-rotate(360deg);
+    }
+    100%
+    {
+        filter: hue-rotate(0deg);
+    }
+}
+
+.container{
+    position: relative;
+    display: flex;
+    /* 字体大小设置和行高一样时，底部会有一条缝隙露出来，所以这里设置比行高小2px */
+    font-size: 38px;
+    line-height: 40px;
+}
+.container .animate-wrapper{
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+}
+
+.text{
+    list-style: none;
+    position: relative;
+    animation: moveUp 9s steps(3) infinite;
+}
+
+.shade{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cir);
+    /* steps()是一个分布函数，可以定义动画分成几步完成 */
+    animation: typing 3s steps(9) infinite;
+}
+
+/* 设置文字遮挡块的移动，实现文字打出来的效果。 */
+@keyframes typing {
+    from{
+        left: 0px;
+    }
+    30%, 70%{
+        left: 100%;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+@keyframes moveUp {
+    from{
+        top: 0px;
+    }
+    100%{
+        top: -120px;
+    }
+}
