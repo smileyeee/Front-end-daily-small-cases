@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    min-height: 100vh;
+}
+
+.balls{
+    display: flex;
+    align-items: center;
+}
+
+.balls span{
+    width: 30px;
+    height: 30px;
+    /* hsl是与rgb不同的一种色彩空间，依次指色相、饱和度和亮度，修改色相可以获得不同颜色 */
+    background-color: hsl(calc(var(--i)*60), 100%, 50%);
+    box-shadow: 0 0 10px hsl(calc(var(--i)*60), 100%, 50%),
+    0 0 20px hsl(calc(var(--i)*60), 100%, 50%),
+    0 0 40px hsl(calc(var(--i)*60), 100%, 50%),
+    0 0 80px hsl(calc(var(--i)*60), 100%, 50%);
+    border-radius: 50%;
+    /* flex-shrink 属性指定了 flex 元素的收缩规则。
+    flex 元素仅在默认宽度之和大于容器的时候才会发生收缩，其收缩的大小是依据 flex-shrink 的值。
+    为0就是不收缩，会产生水平滚动条 */
+    flex-shrink: 0;
+    margin: 0 -10px;
+    animation: animate calc(80s / var(--i)) infinite linear;
+    animation-delay: calc(10s / var(--i));
+}
+
+@keyframes animate {
+    0%{
+        /* translate平移， scale缩放 */
+        transform: translateY(100vh) scale(0); 
+    }
+    100%{
+        transform: translateY(-30px) scale(1);
+    }
+}
