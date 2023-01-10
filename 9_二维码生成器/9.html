@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Web Fonts 是 Google 提供的免费字体服务，开发者和设计师可以便捷地在自己的网页中使用这些 Google 提供的字体。 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <!-- 引入一个生成二维码的js库：qrcode.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link rel="stylesheet" href="9.css">
+</head>
+<body>
+    <div class="wrapper">
+        <input type="text"  id="userInput" placeholder="输入文本或URL" />
+        <div class="option">
+            <select class="sizeOption">
+                <option value="100" selected>100*100</option>
+                <option value="200" selected>200*200</option>
+                <option value="300" selected>300*300</option>
+            </select>
+            <input type="color" id="BGcolor" class="color-inp">
+            <input type="color" id="FGcolor" class="color-inp">
+        </div>
+        <div class="box">
+            <button id="submit" disabled="disabled">生成</button>
+            <a href="#" id="download">下载</a>
+        </div>
+        <div class="container"></div>
+    </div>
+    <script src="9.js"></script>
+</body>
+</html>

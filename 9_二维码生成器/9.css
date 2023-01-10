@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* 设置字体，可以依次设置多个，优先使用左边的字体
+    Poppins是谷歌免费字体，外部引入的
+    sans-self：无衬线字体，即笔画结尾是平滑的字体。 */
+    font-family: "Poppins", sans-serif;
+}
+body{
+    height: 100vh;
+    /* linear-gradient() 函数用于创建一个表示两种或多种颜色线性渐变的图片。 */
+    background: linear-gradient(#f3f3fb 50%, #377dff 50%);
+}
+
+.wrapper{
+    background-color: #fff;
+    /* 单位em：em 值的大小是动态的。
+    当定义或继承 font-size 属性时，1em 等于该元素的字体大小。
+    如果你在网页中任何地方都没有设置文字大小的话，那它将等于浏览器默认文字大小，
+    通常是 16px。 */
+    padding: 5em 4em ;
+    position: absolute;
+    width: 31.5em;
+    /* 以下三行使div上下左右居中 */
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.6em;
+    box-shadow: 0 1.5em 3em rgba(3, 21, 55, 0.3);
+}
+
+#userInput{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    /* 设置元素的轮廓，与border有区别：outline 不占据空间，绘制于元素内容周围。 */
+    outline: none;
+}
+
+.options{
+    margin-top: 1em;
+    display: flex;
+    /* 元素在侧轴居中 */
+    align-items: center;
+    /* 在每行上均匀分配弹性元素。相邻元素间距离相同。 */
+    justify-content: space-between;
+}
+select{
+    /* 声明appearance: none; 来移除浏览器默认样式 */
+    appearance: none;
+    margin: 1em;
+    width: 8em;
+    padding: 0.45em 0.9em;
+    font-size: 1.25em;
+    letter-spacing: 0.5px;
+    /* 设置光标的类型（如果有），在鼠标指针悬停在元素上时显示相应样式。
+    pointer是显示手指样式 */
+    cursor: pointer;
+    background-color: #377dff;
+    border: none;
+    color: #fff;
+    background-image: url("arrow.png");
+    background-repeat: no-repeat;
+    background-size: 1.1em;
+    background-position: 6em;
+    outline: none;
+    border-radius: 0.3em;
+}
+
+/* ::-ms-expand 适用于表单选择控件下拉箭头的修改，有多个属性值，
+设置它隐藏 (display:none) 并使用背景图片来修饰可得到我们想要的效果。 */
+select::-ms-expand{
+    display: none;
+} 
+
+select option{
+    background-color: #fff;
+    color: #377dff;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+    font-size: 1.12em;
+}
+
+.selected{
+    display: none;
+}
+.color-inp{
+    appearance: none;
+    background-color: transparent;
+    margin: 2em 1.5em;
+    width: 3.1em;
+    height: 3.4em;
+}
+
+.color-inp::-webkit-color-swatch{
+    border-radius: 0.3em;
+    border: 0.18em solid #191f3f;
+
+}
+
+.color-inp::-moz-color-swatch{
+    border-radius: 0.3em;
+    border:0.18em solid #191f3f;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box button,
+.box a{
+    font-size: 1em;
+    padding: 0.8em 2em;
+    border-radius: 0.5em;
+    margin-top: 2em;
+}
+
+.box button:disabled{
+    background-color: transparent;
+    color: #a3aab6;
+    border: 0.18em solid #a3aab6;
+}
+
+.box button{
+    background-color: transparent;
+    color: #377dff;
+    border: 0.18em solid #377dff;
+}
+
+.box a{
+    background-color: #377dff;
+    color:#fff;
+    text-decoration: none;
+    border: 0.18em solid #377dff;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.8em;
+}
+
+.hide{
+    display: none;
+}
