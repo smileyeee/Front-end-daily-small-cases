@@ -64,3 +64,9 @@
   【案例总结】| 案例较简单，值得注意的是使用了hsl，与rgb一样是一种颜色表示方式。</br>
   【稍加改动】| 因为原案例较简单，所以尝试了一下使用scss来重写css，但是遇到了一个问题：没办法在scss中读取到HTML空间在style中声明的变量，以及hsl函数中不能使用变量做参数，必须使用具体颜色。不知道是插件功能问题还是scss语法原因。未解决。
 </details>
+
+<details>
+  <summary> 1.11 ： 文字转语音功能 </summary>
+  【参考视频】|【js实现文字转语音】 https://www.bilibili.com/video/BV1SR4y1m7Am/?share_source=copy_web&vd_source=ba60c048e4ef44a77b68ff234c975e03</br>
+  【案例总结】| 使用的是SpeechSynthesisUtterance，这是H5中新增的可将指定文本转为指定类型语音的API。</br>
+</details>
