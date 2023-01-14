@@ -1,5 +1,5 @@
 # Front-end-daily-small-cases
-每日一个前端的小案例，本人是前端初学者，此项目的目的在于熟悉CSS和原生JAvaScript。
+每日一个前端的小案例，本人是前端初学者，此项目的目的在于熟悉CSS和JAvaScript。
 
 <details>
   <summary> 1.1 ： 带有手风琴效果的图片轮播 </summary>
