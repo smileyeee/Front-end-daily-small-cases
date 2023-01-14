@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: #404040;
+    display: grid;
+    place-items: center;
+    
+}
+
+.circle{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    bottom: 60px;
+    left: 200px;
+    border-radius: 50%;
+    /* linear-gradient()是可以创建一个多种颜色线性渐变的图片 */
+    background-image: linear-gradient(#302bc9, #00fff5);
+    /* 设置图像滤镜，blur()是设置模糊。 */
+    filter: blur(0px);
+}
+
+/* 在网页上画了两个圆形做装饰 */
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#302bc9, #00fff5);
+    /* clip-path使用裁剪的方式创建元素可视区域
+    circle()可定义一个圆形区域，设置半径和圆心位置 */
+    clip-path: circle(30% at right 70%);
+}
+
+body::after{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#302bc9, #00fff5);
+    /* clip-path使用裁剪的方式创建元素可视区域
+    circle()可定义一个圆形区域，设置半径和圆心位置 */
+    clip-path: circle(30% at 10% 30%);
+}
+
+.container{
+    position: relative;
+    display: grid;
+    place-items: center;
+    max-width: 90%;
+    z-index: 1;
+    padding: 30px;
+    /* 以下分别设置grid布局的行和列的属性 */
+    grid-template-rows: 600px;
+    grid-template-columns: repeat(auto-fit, 350px);
+}
+
+.card{
+    position: relative;
+    width:  300px;
+    height: 600px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    /* 为本元素背后的所有元素添加滤镜，只有本元素有透明才能看到效果，好理解！ */
+    backdrop-filter: blur(5px);
+}
+
+.card .content{
+    padding: 20px;
+    text-align: center;
+    /* 突然记混了下面两个属性：transform是变化效果，transition是控制动画过渡效果 */
+    transform: translateY(50px);
+    transition: 0.5s; 
+}
+
+.card:hover{
+    transform: translateX(0px);
+    transition: 0.5s;
+}
+
+.card .content h2{
+    position: absolute;
+    top: -40px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.2);
+    transform: rotate(60deg) translate(35%, -50%);
+}
+.card .content h1{
+    font-size: 1.8em;
+    color: #fff;
+    /* pointer-event用于指示
+    在什么情况下 (如果有) 某个特定的图形元素可以成为鼠标事件的 target 
+    
+    设置为none则该元素不会作为鼠标事件的对象，鼠标事件会透过该元素指定其下面的元素*/
+    pointer-events: none;
+    margin-bottom: 1.5em;
+}
+
+.card .content p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 400px;
+}
+
+.card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 
+    0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 15px rgba(255, 255, 255, 0.8);
+
+}
+
