@@ -53,7 +53,7 @@
 </details>
 
 <details>
-  <summary> 1.9 ： 二维码生成器  </summary>
+  <summary> 1.9 ： 二维码生成器（qrcode.js）  </summary>
   【参考视频】| 【二维码生成器| 带有源代码的Javascript项目】 https://www.bilibili.com/video/BV1mA411f7p9/?share_source=copy_web&vd_source=ba60c048e4ef44a77b68ff234c975e03</br>
   【案例总结】| 生成二维码主要借助了qrcode.js这个js库，当然，在写CSS时又见识了一些新属性，在js中涉及了异步函数的使用（关于异步暂时了解较少，但是在这个案例中的使用也很简单，关键字async await）。另外，感觉收获较大的是见识了另外一种编码习惯，在写HTML结构的过程中同步去写CSS样式，感觉这样写其实更直观，比加完所有控件后再去理清结构写CSS样式更好一些，之后自己写也多多尝试。另外，js代码部分感觉该作者也写的条例清晰，非常规范。也算这个案例学习的意外之喜吧。另外，还有一个小bug没有解决，在设置二维码尺寸时，改变的是图片的整体大小而非二维码的复杂程度，与视频效果不符。
 </details>
