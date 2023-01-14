@@ -70,3 +70,10 @@
   【参考视频】|【js实现文字转语音】 https://www.bilibili.com/video/BV1SR4y1m7Am/?share_source=copy_web&vd_source=ba60c048e4ef44a77b68ff234c975e03</br>
   【案例总结】| 使用的是SpeechSynthesisUtterance，这是H5中新增的可将指定文本转为指定类型语音的API。</br>
 </details>
+
+<details>
+  <summary> 1.12 ： 3d卡片悬停倾斜（vanilla-tilt.js） </summary>
+  【参考视频】|【使用vanilla-tilt.js制作3D倾斜悬停效果的卡片】 https://www.bilibili.com/video/BV1Fv4y1971b/?share_source=copy_web&vd_source=ba60c048e4ef44a77b68ff234c975e03</br>
+  【案例总结】| 在这个案例中使用了一个效果很好看的js库vanilla-tilt.js，其功能是设置鼠标悬停的各种效果，这里是倾斜和反光体现3d效果。但是该案例的主要工作依然是在CSS。做了一个典型的grid三栏布局，可以自适应宽度进行自动换行，只需要三行代码就实现了这个效果，还是很方便的。</br>
+</details>
+
