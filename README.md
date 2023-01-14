@@ -77,3 +77,8 @@
   【案例总结】| 在这个案例中使用了一个效果很好看的js库vanilla-tilt.js，其功能是设置鼠标悬停的各种效果，这里是倾斜和反光体现3d效果。但是该案例的主要工作依然是在CSS。做了一个典型的grid三栏布局，可以自适应宽度进行自动换行，只需要三行代码就实现了这个效果，还是很方便的。</br>
 </details>
 
+<details>
+  <summary> 1.13 ： 一个抖动的大水滴 </summary>
+  【参考视频】|【使用CSS绘制动态水滴效果】 https://www.bilibili.com/video/BV1Qy4y1L7ot/?share_source=copy_web&vd_source=ba60c048e4ef44a77b68ff234c975e03</br>
+  【案例总结】| 这个案例没有涉及到什么新东西，但是设计水滴的思路非常棒。画水滴轮廓借助了这个可视化工具https://9elements.github.io/fancy-border-radius/。</br>
+</details>
