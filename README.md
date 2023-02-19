@@ -82,3 +82,11 @@
   【参考视频】|【使用CSS绘制动态水滴效果】 https://www.bilibili.com/video/BV1Qy4y1L7ot/?share_source=copy_web&vd_source=ba60c048e4ef44a77b68ff234c975e03</br>
   【案例总结】| 这个案例没有涉及到什么新东西，但是设计水滴的思路非常棒。画水滴轮廓借助了这个可视化工具https://9elements.github.io/fancy-border-radius/。</br>
 </details>
+
+<details>
+  <summary> 1.14 -> 2.14 ： 监测网络连接状态 </summary>
+  【参考视频】|【使用HTML、CSS和JavaScript创网络连接状态检测】 https://www.bilibili.com/video/BV1T24y1v7ab/?share_source=copy_web&vd_source=ba60c048e4ef44a77b68ff234c975e03</br>
+  【案例总结】| 无</br>
+  【无关的话】| 年前做的这个案例，回来已经有点记不清了，总结也就不知道写点啥。现在回校了继续坚持吧。</br>
+</details>
+
