@@ -1,0 +1,15 @@
+.picture{
+    display: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    /* 设置文本的修饰线（下划线、删除线等） */
+    text-decoration: none;  
+    color: #000;
+    /* 该属性可以控制用户是否可以选中文本 */
+    user-select: none; 
+}

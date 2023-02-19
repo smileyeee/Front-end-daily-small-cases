@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(63, 63, 63);
+}
+
+.container{
+    position: relative;
+    top: -80px;
+    transform: skewY(-20deg);
+    /* skew是一种变换，对元素进行倾斜 ，XY表示沿水平或垂直方向*/
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.container .cube{
+    z-index: 2;
+    position: relative;
+}
+
+.container .cube:nth-child(2){
+    z-index: 1;
+    translate: -60px -60px;
+}
+
+.container .cube:nth-child(3){
+    z-index: 3;
+    translate: 60px 60px;
+}
+
+.container .cube div{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    translate: calc(-90px * var(--x));
+}
+
+.container .cube div span {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    z-index: var(--i);
+    transition: 1.5s;
+}
+
+.container .cube div span:hover{
+    transition: 0s;
+    background-color: red;
+    /* fliter设置模糊或颜色偏移等图形效果，常用于调整图像、背景和边框的渲染
+        drop-shadow设置阴影效果，参数依次为阴影的水平垂直偏移量、模糊度（值越大阴影越大且模糊）、颜色
+    */
+    filter: drop-shadow(0 0 30px red);
+}
+
+.container .cube div span::before{
+    content: '';
+    position: absolute;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background-color: #b0b0b0;
+    /* transform-origin可改变一个元素变形的原点 
+    right就是原点为右边框*/
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 1.5s;
+}
+
+.container .cube div span:hover::before{
+    transition: 0s;
+    background-color: rgb(189, 1, 1);
+}
+
+.container .cube div span::after{
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: #e5e5e5;
+    /* transform-origin可改变一个元素变形的原点 
+    right就是原点为右边框*/
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 1.5s;
+}
+
+.container .cube div span:hover::after{
+    transition: 0s;
+    background-color: rgb(228, 0, 0);
+}
+
+
+
+
