@@ -104,14 +104,14 @@
 
 <details>
   <summary> 2.17 ：动态边框  </summary>
-  【参考视频】|【【CSS】流动波浪页脚】 https://www.bilibili.com/video/BV1Ax4y157AB/?share_source=copy_web&vd_source=ba60c048e4ef44a77b68ff234c975e03</br>
+  【参考视频】|【厉害的CSS边框动画效果 | 快速CSS技巧】 https://www.bilibili.com/video/BV1ST411S72z/?share_source=copy_web&vd_source=ba60c048e4ef44a77b68ff234c975e03</br>
   【案例总结】| 本例中关注了如何给div的边框添加动态的效果，一开始猜测是对border的阴影进行处理（比如水滴的那个阴影），但是后面才发现是直接使用小的div来假装边框，思路还是很简单的</br>
 </details>
 
 <details>
   <summary> 2.18 ：波浪页脚  </summary>
   【参考视频】|【CSS】流动波浪页脚】 https://www.bilibili.com/video/BV1Ax4y157AB/?share_source=copy_web</br>
-  【案例总结】| 本例中关注了如何给div的边框添加动态的效果，一开始猜测是对border的阴影进行处理（比如水滴的那个阴影），但是后面才发现是直接使用小的div来假装边框，思路还是很简单的</br>
+  【案例总结】| 本例想实现一个波浪的效果，使用了SVG矢量作图。有点偏数学，是通过一些参数来直接在网页中画图，没有更详细地去看这个svg怎么画，也许之后会深入了解。感觉是一个很厉害的东西，如果掌握了可以在网页上实现更加灵活的效果。</br>
 </details>
 
 
