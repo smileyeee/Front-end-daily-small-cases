@@ -91,13 +91,27 @@
 </details>
 
 <details>
-  <summary> 1.15 : 响应式彩色魔方 </summary>
+  <summary> 2.15 : 响应式彩色魔方 </summary>
   【参考视频】| 【很酷炫！纯CSS实现立方体矩阵鼠标悬停动画效果】 https://www.bilibili.com/video/BV1JK411D7y9/?share_source=copy_web&vd_source=ba60c048e4ef44a77b68ff234c975e03</br>
   【案例总结】| 纯css实现，亮点主要在于魔方图案的构建，利用skew弄倾斜的面，使用front和after伪元素来复制。颜色变化的效果是hue-rotate，这个已经用过几次了。</br>
 </details>
 
 <details>
-  <summary> 1.16 ： 图片聚焦效果 </summary>
+  <summary> 2.16 ： 图片聚焦效果 </summary>
   【参考视频】|【HTML＋Less＋JavaScript完成图片聚焦效果，好看的效果又增加了～】 https://www.bilibili.com/video/BV1Ay4y1d7TG/?share_source=copy_web&vd_source=ba60c048e4ef44a77b68ff234c975e03</br>
   【案例总结】| 在这个例子里体验了一下用less来写样式，亮点是利用了less的继承特性，可以设计在鼠标悬停下各子元素的不同的效果。与sess相比，less可以直接引入html，而sess需要转为CSS再被引入html。</br>
 </details>
+
+<details>
+  <summary> 2.17 ：动态边框  </summary>
+  【参考视频】|【【CSS】流动波浪页脚】 https://www.bilibili.com/video/BV1Ax4y157AB/?share_source=copy_web&vd_source=ba60c048e4ef44a77b68ff234c975e03</br>
+  【案例总结】| 本例中关注了如何给div的边框添加动态的效果，一开始猜测是对border的阴影进行处理（比如水滴的那个阴影），但是后面才发现是直接使用小的div来假装边框，思路还是很简单的</br>
+</details>
+
+<details>
+  <summary> 2.18 ：波浪页脚  </summary>
+  【参考视频】|【CSS】流动波浪页脚】 https://www.bilibili.com/video/BV1Ax4y157AB/?share_source=copy_web</br>
+  【案例总结】| 本例中关注了如何给div的边框添加动态的效果，一开始猜测是对border的阴影进行处理（比如水滴的那个阴影），但是后面才发现是直接使用小的div来假装边框，思路还是很简单的</br>
+</details>
+
+
