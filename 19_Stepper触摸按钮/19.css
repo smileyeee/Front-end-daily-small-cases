@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100vh;
+    background-color: #53535352;
+    display: grid;
+    place-items: center;
+    font-size: 100px;
+    font-family: Roboto Mono;
+}
+
+.container{
+    display: flex;
+    /* space-between_均匀排列每个元素,首个元素放置于起点，末尾元素放置于终点 */
+    justify-content: space-between;
+    width: 2em;
+    height: 0.8em;
+    border-radius: .4em;
+    background-color:  rgba(0, 0, 0, 0.528);
+    overflow: hidden;
+    position: relative;
+}
+
+.container :is(.minus, .plus) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 0.6em;
+    /* background-color: rgba(0, 0, 0, 0.528); */
+}
+
+.container :is(.minus, .plus)::after,
+.container .plus::before{
+    content: "";
+    width: 0.25em;
+    height: 0.04em;
+    border-radius: .02em;
+    background-color: #fff;
+}
+
+/* 画了一个加号 */
+.container .plus::after{
+    position: absolute;
+    rotate: 90deg;
+    /* border-radius: 50%; */
+}
+
+.container .counter-container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.container .counter-container .counter{
+    display: grid;
+    place-items: center;
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: .4em;
+    background-color: #ffffff;
+    /* 设置悬停时的鼠标样式 */
+    cursor: pointer;
+    z-index: 2;
+}
+
+.container .counter-container .counter p{
+    font-size: .4em;
+    color: rgba(0, 0, 0, 0.528);
+}
+
+
