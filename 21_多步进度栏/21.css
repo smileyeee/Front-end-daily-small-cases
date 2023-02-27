@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefef;
+}
+
+.container{
+    max-width: 500px;
+    width: 100%;
+    /* background-color: rgb(199, 150, 71); */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.container .steps{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.steps .circle{
+    height: 50px;
+    width: 50px;
+    /* background-color: rgb(157, 189, 218); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 4px solid #6a7b8c;
+    background-color: #9abcbd;
+    color: #6a7b8c;
+    font-size: 30px;
+    font-weight: 500;
+    user-select: none;
+    transition-delay: 0.5s;
+}
+
+.steps .circle.active{
+    border: 4px solid #348de1;
+    background-color: #82d9de;
+    color: #348de1;
+}
+
+.steps .progress{
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: #6a7b8c;
+    z-index: -1;
+}
+
+.progress .indicator{
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    background-color: #348de1;
+    transition: 0.5s ;
+}
+
+.container .buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.buttons button{
+    padding: 8px 25px;
+    background-color: #82d9de;
+    color: #348de1;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.buttons button:disabled{
+    background-color: #9abcbd;
+    color: #6a7b8c;
+}
+
+
